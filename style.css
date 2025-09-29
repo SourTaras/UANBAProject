@@ -162,3 +162,86 @@ footer {
   color: #ff6f00;
   text-decoration: underline;
 }
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 0 10px rgba(0,0,0,0.7);
+  border-radius: 10px;
+  overflow: hidden;
+  font-size: 16px;
+}
+
+thead {
+  background-color: #ff6f00;
+}
+
+thead th {
+  color: white;
+  padding: 14px 10px;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+tbody tr {
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  transition: background-color 0.3s ease;
+}
+
+tbody tr:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.02);
+}
+
+tbody tr:hover {
+  background-color: rgba(255, 111, 0, 0.2);
+}
+
+tbody th, tbody td {
+  padding: 12px 10px;
+  color: #f5f5f5;
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* Логотипи команд */
+
+
+/* Номери рядків у <th> tbody */
+tbody th {
+  font-weight: 600;
+  color: #ffa726;
+}
+tbody td img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  border-radius: 6px;
+}
+/* Підсилення контрасту тексту для кращої читабельності */
+tbody th, tbody td {
+  padding: 12px 10px;
+  color: #fff; /* зробив текст чисто білим */
+  text-align: center;
+  vertical-align: middle;
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.8); /* додав тінь для тексту */
+}
+
+/* Заголовки таблиці */
+thead th {
+  color: #fff;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+
+
+/* Адаптивність: горизонтальний скрол при вузьких екранах */
+@media (max-width: 700px) {
+  table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}
